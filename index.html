@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        h1              {margin-bottom: 30px;}
+        label           {font-weight: bold;}
+        input, select   {margin-bottom: 10px;}
+        form            {width: 30%; padding: 20px;}
+    </style>
+</head>
+<body class="m-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm">
+        <!-- <input  type="hidden" id="id" value="<?php echo isset($_GET['id']) ? $_GET['id'] : ''; ?>"/> -->
+        
+        <label for="id">8-Digit Employee ID:</label><br/>
+        <input type="text" id="id" name="employee_id" maxlength="8" required /><br/>
+
+        <label for="name">Full Name:</label><br/>
+        <input type="text" id="name" name="name" required /><br/>
+
+        <label for="ext">4-Digit Extension Number</label><br />
+        <input type="text" id="ext"  name="extension_number" maxlength="4" required</><br/>
+
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" required< /><br />
+
+        <label for="department">Department</label><br />
+        <select type="select" id="department" name="Department" required>
+            <option value="administrative">Administrative</option>
+            <option value="engineering">Engineering</option>
+            <option value="executive">Executive</option>
+            <option value="marketing">Marketing</option>
+            <option value="quality_assurance">Quality Assurance</option>
+            <option value="sales">Sales</option>
+        </select><br />
+
+        <input type="submit" id="submit" name="submit" required value="Add Employee"< /><br />
+
+    </form>
+</body>
+</html>
