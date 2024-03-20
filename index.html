@@ -8,11 +8,30 @@
     <script src="js/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <style>
-        h1              {margin-bottom: 30px;}
-        label           {font-weight: bold;}
-        input, select   {margin-bottom: 10px;}
-        form            {width: 30%; padding: 20px;}
+        h1              {margin-bottom: 30px; text-align: center; color: #0056b3;}
+        label           {font-weight: bold; color: #003366;}
+        input, select   {margin-bottom: 10px; color: #002244;}
+        form            {margin-left: auto; margin-right: auto; width: 30%; padding: 20px;}
+
+        .btn-primary{
+            background-color: #0056b3;
+            color: aliceblue;
+        }
+
+        .btn-primary:hover {
+        background-color:aliceblue;
+        border-color: #004085;
+        color: #002244;
+        }
+  
+        .btn-primary:active {
+        background-color: #003366 !important;
+        border-color: #002244 !important;
+        color: aliceblue;
+
+        }
     </style>
+
 </head>
 <body class="m-4">
     <h1>Employee Management System</h1>
@@ -41,7 +60,7 @@
             <option value="sales">Sales</option>
         </select><br />
 
-        <input type="submit" id="submit" name="submit" required value="Add Employee"< /><br />
+        <input type="submit" id="submit" name="submit" class="btn-primary" required value="Add Employee"< /><br />
 
     </form>
 </body>
