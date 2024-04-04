@@ -1,24 +1,5 @@
 "use strict";
-// V-1
-// const $ = selector => document.querySelector(selector);
-
-// window.addEventListener("DOMContentLoaded", () => {
-//     $("#submit").addEventListener("click", evt => {
-//         evt.preventDefault();
-//         const id  =$("#id").value;
-//         const name = $("#name").value;
-//         const ext = $("#ext").value;
-//         const email = $("#email").value;
-//         const department = $("#department").value;
-
-//         console.log({id,  name, ext, email, department});
-//         alert(`ID: ${id}\nName: ${name}\nExtension: ${ext}\nEmail: ${email}\nDepartment: ${department}\n`);
-//     });
-// });
-
 // V-2
-
-
 window.addEventListener("DOMContentLoaded", () => {
     const getValue = selector => document.querySelector(selector).value;
 
@@ -35,3 +16,21 @@ window.addEventListener("DOMContentLoaded", () => {
         alert(`ID: ${id}\nName: ${name}\nExtension: ${ext}\nEmail: ${email}\nDepartment: ${department}\n`);
     });
 });
+
+
+// V-1
+// const $ = selector => document.querySelector(selector);
+
+// window.addEventListener("DOMContentLoaded", () => {
+//     $("#submit").addEventListener("click", evt => {
+//         evt.preventDefault();
+//         const id  =$("#id").value;
+//         const name = $("#name").value;
+//         const ext = $("#ext").value;
+//         const email = $("#email").value;
+//         const department = $("#department").value;
+
+//         console.log({id,  name, ext, email, department});
+//         alert(`ID: ${id}\nName: ${name}\nExtension: ${ext}\nEmail: ${email}\nDepartment: ${department}\n`);
+//     });
+// });
